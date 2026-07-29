@@ -1,5 +1,5 @@
 
-# deviation-agent-eval-harness
+# Deviation Agent Eval Harness
 > The 15-case exam that stops hallucinations before FDA does
 
 This repo implements the evaluation framework from "How to Evaluate an AI Agent Before It Touches Your Deviation Reports"
