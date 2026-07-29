@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Deviation Agent Output Contract",
+  "type": "object",
+  "required": [
+    "classification",
+    "containment",
+    "root_cause_hypotheses",
+    "missing_information",
+    "impacted_sops",
+    "similar_deviations",
+    "investigation_questions",
+    "escalation",
+    "metadata",
+    "disclaimer"
+  ],
+  "properties": {
+    "classification": {
+      "type": "object",
+      "required": [
+        "category",
+        "severity",
+        "gxp_impact",
+        "justification"
+      ],
+      "properties": {
+        "category": {
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "Critical",
+            "Major",
+            "Minor"
+          ]
+        },
+        "gxp_impact": {
+          "type": "boolean"
+        },
+        "justification": {
+          "type": "string"
+        }
+      }
+    },
+    "containment": {
+      "type": "object",
+      "required": [
+        "required",
+        "action",
+        "timeline"
+      ],
+      "properties": {
+        "required": {
+          "type": "boolean"
+        },
+        "action": {
+          "type": "string"
+        },
+        "timeline": {
+          "type": "string"
+        }
+      }
+    },
+    "root_cause_hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "hypothesis",
+          "framework",
+          "evidence",
+          "confidence"
+        ],
+        "properties": {
+          "hypothesis": {
+            "type": "string"
+          },
+          "framework": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "missing_information": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "impacted_sops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "version",
+          "section"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "similar_deviations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "similarity_reasoning": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "investigation_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "escalation": {
+      "type": "object",
+      "required": [
+        "decision",
+        "reason"
+      ],
+      "properties": {
+        "decision": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "model",
+        "prompt_version",
+        "temperature",
+        "timestamp"
+      ],
+      "properties": {
+        "model": {
+          "type": "string"
+        },
+        "prompt_version": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "timestamp": {
+          "type": "string"
+        }
+      }
+    },
+    "disclaimer": {
+      "type": "string"
+    }
+  }
+}

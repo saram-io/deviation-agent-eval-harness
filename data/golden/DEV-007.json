@@ -1,0 +1,20 @@
+{
+  "id": "DEV-007",
+  "category": "borderline",
+  "input": "During line clearance for Lot L-2026-11, operator found one unlabeled syringe barrel on filling line 2 after clearance was signed. No product was in line. Barrel was empty.",
+  "golden_answer": {
+    "category": "Facility / Line Clearance",
+    "severity": "Major \u2014 potential mix-up, breach of SOP-MFG-012 Section 6.3",
+    "containment": "Quarantine Line 2, re-execute clearance per 6.4",
+    "sops": [
+      "SOP-MFG-012 Sec 6.3, 6.4",
+      "21 CFR 211.67(b)"
+    ],
+    "investigation_questions": [
+      "Review clearance checklist",
+      "Interview operator",
+      "Check CCTV"
+    ],
+    "escalation": "QA Manager"
+  }
+}

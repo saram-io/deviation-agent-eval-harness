@@ -1,0 +1,15 @@
+{
+  "id": "DEV-001",
+  "category": "clear-cut",
+  "input": "Operator missed second verifier signature on batch record BR-2026-011 step 4.2. Product not yet released.",
+  "golden_answer": {
+    "category": "Documentation",
+    "severity": "Minor",
+    "justification": "Isolated doc error per SOP-QA-001 Sec 4.1",
+    "containment": "Hold batch, obtain second verification",
+    "sops": [
+      "SOP-QA-001 Sec 4.1"
+    ],
+    "escalation": "QA Associate"
+  }
+}

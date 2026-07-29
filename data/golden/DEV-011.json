@@ -1,0 +1,15 @@
+{
+  "id": "DEV-011",
+  "category": "clear-cut-critical",
+  "input": "Sterility failure for Lot L-2026-15 - one unit positive in media fill simulation. No product released.",
+  "golden_answer": {
+    "category": "Sterility Critical",
+    "severity": "Critical",
+    "justification": "Direct patient safety risk per SOP-QA-001 Sec 4.1",
+    "containment": "Immediate quarantine, stop line",
+    "sops": [
+      "SOP-QA-001 Sec 4.1"
+    ],
+    "escalation": "QA Head immediately"
+  }
+}

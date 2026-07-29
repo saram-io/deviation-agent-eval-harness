@@ -1,0 +1,15 @@
+{
+  "id": "DEV-003",
+  "category": "known-failure",
+  "input": "Skipped filter integrity test after filtration for Lot L-2026-10. Product already filtered.",
+  "golden_answer": {
+    "category": "Manufacturing",
+    "severity": "Critical",
+    "justification": "Sterility assurance compromised per 21 CFR 211.67",
+    "containment": "Quarantine batch, do not release",
+    "sops": [
+      "21 CFR 211.67(b)"
+    ],
+    "escalation": "QA Head"
+  }
+}

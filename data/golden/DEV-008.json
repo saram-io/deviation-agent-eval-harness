@@ -1,0 +1,15 @@
+{
+  "id": "DEV-008",
+  "category": "near-miss",
+  "input": "Operator noticed syringe barrel slightly misaligned but corrected before filling. No product impacted, caught by in-process check.",
+  "golden_answer": {
+    "category": "Near-miss",
+    "severity": "No deviation - document as in-process correction",
+    "justification": "Caught by designed control",
+    "containment": "None",
+    "sops": [
+      "SOP-MFG-012"
+    ],
+    "escalation": "No escalation"
+  }
+}

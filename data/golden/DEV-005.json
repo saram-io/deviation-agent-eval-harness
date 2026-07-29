@@ -1,0 +1,15 @@
+{
+  "id": "DEV-005",
+  "category": "borderline",
+  "input": "Temperature excursion in warehouse: 2C above limit for 45 minutes for raw material RM-102. Material not yet used.",
+  "golden_answer": {
+    "category": "Storage",
+    "severity": "Minor vs Major - needs stability review",
+    "justification": "Requires impact assessment per SOP-QA-001 Sec 7.1",
+    "containment": "Quarantine RM-102",
+    "sops": [
+      "SOP-QA-001 Sec 7.1"
+    ],
+    "escalation": "QA Associate"
+  }
+}

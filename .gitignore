@@ -1,0 +1,59 @@
+# --- Project-specific ---
+runs/*.json
+runs/*.csv
+!runs/.gitkeep
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+sdist/
+wheels/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+.venv*
+
+# Environment & secrets
+.env
+.env.*
+
+# Testing & coverage
+.tox/
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Type checkers & linters
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# IDEs & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

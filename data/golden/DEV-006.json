@@ -1,0 +1,15 @@
+{
+  "id": "DEV-006",
+  "category": "cross-functional",
+  "input": "OOS for assay for Lot L-2026-12. Manufacturing claims correct dispensing, QC claims method followed.",
+  "golden_answer": {
+    "category": "Cross-functional OOS",
+    "severity": "Major",
+    "justification": "Requires cross-functional investigation",
+    "containment": "Hold lot",
+    "sops": [
+      "SOP-QA-001"
+    ],
+    "escalation": "QA Manager"
+  }
+}

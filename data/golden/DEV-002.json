@@ -1,0 +1,15 @@
+{
+  "id": "DEV-002",
+  "category": "clear-cut",
+  "input": "Label mix-up: 2 vials of Lot L-2026-08 labeled with Lot L-2026-09 label. Caught during 100% visual inspection.",
+  "golden_answer": {
+    "category": "Labeling",
+    "severity": "Major",
+    "justification": "Potential mix-up per SOP-MFG-012",
+    "containment": "Quarantine lot, 100% relabel check",
+    "sops": [
+      "SOP-MFG-012 Sec 6.3"
+    ],
+    "escalation": "QA Manager"
+  }
+}
